@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Gigaland - NFT Marketplace Website Template"
+      name="description"
+    />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- CSS Files -->
+    <link
+      id="bootstrap"
+      href="../../css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- <link href="../../css/plugins.css" rel="stylesheet" type="text/css" /> -->
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../../css/de-modern.css" rel="stylesheet" type="text/css" /> -->
+    <link href="../../css/de-clivus.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../../css/de-grey.css" rel="stylesheet" type="text/css" /> -->
+    <link
+      id="colors"
+      href="../../css/colors/scheme-07.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      id="colors"
+      href="../../css/colors/scheme-04.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../../css/coloring.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../../css/coloring-gradient.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      id="colors"
+      href="../../css/colors/scheme-12.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./Topaz.so - Aptos NFT Marketplace_files/fe0a71894a3b9a07.css"
+      data-n-g=""
+    />
+    <style id="_goober">
+      @keyframes go2264125279 {
+        from {
+          transform: scale(0) rotate(45deg);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1) rotate(45deg);
+          opacity: 1;
+        }
+      }
+      @keyframes go3020080000 {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      @keyframes go463499852 {
+        from {
+          transform: scale(0) rotate(90deg);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1) rotate(90deg);
+          opacity: 1;
+        }
+      }
+      @keyframes go1268368563 {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes go1310225428 {
+        from {
+          transform: scale(0) rotate(45deg);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1) rotate(45deg);
+          opacity: 1;
+        }
+      }
+      @keyframes go651618207 {
+        0% {
+          height: 0;
+          width: 0;
+          opacity: 0;
+        }
+        40% {
+          height: 0;
+          width: 6px;
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+          height: 10px;
+        }
+      }
+      @keyframes go901347462 {
+        from {
+          transform: scale(0.6);
+          opacity: 0.4;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .go4109123758 {
+        z-index: 9999;
+      }
+      .go4109123758 > * {
+        pointer-events: auto;
+      }
+    </style>
+    <style type="text/css">
+      .fadein {
+        animation-name: fadein;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    <style type="text/css">
+      :root {
+        --default-bg-color: #f6f7f8;
+        --default-bg-moving-gradient: linear-gradient(
+          to right,
+          rgb(238, 238, 238) 8%,
+          rgb(222, 222, 222) 18%,
+          rgb(238, 238, 238) 33%
+        );
+      }
+
+      .shimmer {
+        background: var(--default-bg-color);
+        background-image: var(--default-bg-moving-gradient);
+        background-repeat: no-repeat;
+        animation: shimmering forwards infinite ease-in-out,
+          fadein 0.02s forwards;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes shimmering {
+        from {
+          background-position: top right;
+        }
+
+        to {
+          background-position: top left;
+        }
+      }
+    </style>
+    <style type="text/css">
+      :root {
+        --default-bg-color: #e1e2e4;
+      }
+
+      .breathing {
+        width: 100%;
+        height: 100%;
+        background: var(--default-bg-color);
+        animation: breathing ease-in-out infinite alternate;
+      }
+
+      @keyframes breathing {
+        from {
+          opacity: 0.25;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    <style></style>
+    <style id="erd_scroll_detection_scrollbar_style">
+      /* Created by the element-resize-detector library. */
+      .erd_scroll_detection_container > div::-webkit-scrollbar {
+        display: none;
+      }
+
+      .erd_scroll_detection_container_animation_active {
+        -webkit-animation-duration: 0.1s;
+        animation-duration: 0.1s;
+        -webkit-animation-name: erd_scroll_detection_container_animation;
+        animation-name: erd_scroll_detection_container_animation;
+      }
+      @-webkit-keyframes erd_scroll_detection_container_animation {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes erd_scroll_detection_container_animation {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <title>Topaz.so - Aptos NFT Marketplace</title>
+    <link
+      href="chrome-extension://cjdnfmjmdligcpfcekfmenlhiopehjkd/web_resources/modal/modal.css"
+      rel="stylesheet"
+      id="__tmpStyle"
+    />
+    <style type="text/css">
+      @font-face {
+        font-family: Roboto;
+        src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+      }
+    </style>
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/328748d6-2102b55c3881d35a.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/2-6656274708827fef.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/3174-0077883002636ec1.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/7802-f58619697cce445e.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/index-f7a8fcd941efc3e1.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/explore-collections-3edc3bceb9b8c900.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/recent-5772923f5d9b8a4a.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/4953-93479bea9e215086.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/1657-882ffaef7452776d.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/299-1e19b3b4f95c1641.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/profile-81e88e7afe74980c.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/8909-851d533ca6b0684e.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/[collectionSlug]-cadc99dcaf67aaa1.js.download"
+    />
+    <link
+      as="script"
+      rel="prefetch"
+      href="./Topaz.so - Aptos NFT Marketplace_files/[address]-f1f91904c44557e5.js.download"
+    />
+
+    <title>Gigaland - NFT Marketplace Website Template</title>
+  </head>
+  <body class="switch-scheme de-clivus">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="selector" style="background-size: cover">
+      <div id="demo-rtl" class="sc-opt" style="background-size: cover">
+        <div class="sc-icon" style="background-size: cover">RTL</div>
+        <span class="sc-val">Click to Enable</span>
+      </div>
+    </div>
+
+    <div id="__next">
+      <script>
+        !(function () {
+          try {
+            var d = document.documentElement,
+              c = d.classList;
+            c.remove("light", "dark");
+            var e = localStorage.getItem("theme");
+            if ("system" === e || (!e && false)) {
+              var t = "(prefers-color-scheme: dark)",
+                m = window.matchMedia(t);
+              if (m.media !== t || m.matches) {
+                d.style.colorScheme = "dark";
+                c.add("dark");
+              } else {
+                d.style.colorScheme = "light";
+                c.add("light");
+              }
+            } else if (e) {
+              c.add(e || "");
+            } else {
+              c.add("dark");
+            }
+            if (e === "light" || e === "dark" || !e)
+              d.style.colorScheme = e || "dark";
+          } catch (e) {}
+        })();
+      </script>
+      <div>
+        <div
+          style="
+            position: fixed;
+            z-index: 9999;
+            top: 16px;
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            pointer-events: none;
+          "
+        ></div>
+      </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/assets/[collectionSlug]/[nameEncoded]/[propertyVersion]",
+        "query": {},
+        "buildId": "jCZJmcLEXIPvjM29sOae4",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false,
+        "scriptLoader": []
+      }
+    </script>
+    <script
+      src="./Topaz.so - Aptos NFT Marketplace_files/js"
+      data-nscript="afterInteractive"
+    ></script>
+    <script id="nextjs-google-analytics" data-nscript="afterInteractive">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-R332TYJ9HM", {
+        page_path: window.location.pathname,
+      });
+    </script>
+    <!-- <script src="./328748d6-2102b55c3881d35a.js.download"></script>
+    <script src="./2-6656274708827fef.js.download"></script>
+    <script src="./3174-0077883002636ec1.js.download"></script>
+    <script src="./7802-f58619697cce445e.js.download"></script>
+    <script src="./index-f7a8fcd941efc3e1.js.download"></script>
+    <script src="./explore-collections-3edc3bceb9b8c900.js.download"></script>
+    <script src="./recent-5772923f5d9b8a4a.js.download"></script>
+    <script src="./4953-93479bea9e215086.js.download"></script>
+    <script src="./1657-882ffaef7452776d.js.download"></script>
+    <script src="./299-1e19b3b4f95c1641.js.download"></script>
+    <script src="./profile-81e88e7afe74980c.js.download"></script>
+    <script src="./8909-851d533ca6b0684e.js.download"></script>
+    <script src="./[collectionSlug]-cadc99dcaf67aaa1.js.download"></script>
+    <script src="./[address]-f1f91904c44557e5.js.download"></script> -->
+
+    <script src="../../js/plugins.js"></script>
+    <script src="../../js/designesia.js"></script>
+    <!-- <script src="../js/particles.js"></script> -->
+    <!-- <script src="../js/particles-settings.js"></script> -->
+  </body>
+</html>
