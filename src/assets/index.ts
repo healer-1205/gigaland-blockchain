@@ -1,4 +1,4 @@
-import Logos from "./logos"
+import Images from "./images"
 import svgIcons from "./svgs"
 
-export { Logos, svgIcons }
+export { Images, svgIcons }

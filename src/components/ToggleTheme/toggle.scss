@@ -181,3 +181,47 @@
   background: white;
   transition: all 150ms ease-in;
 }
+
+.toggle_container {
+  margin-right: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.toggle_button {
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  cursor: pointer !important;
+  all: unset;
+  width: 42px;
+  height: 25px;
+  position: relative;
+  box-shadow: rgb(0 0 0 / 14%) 0px 2px 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 9999px;
+}
+
+.c-jrMzNf {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: rgb(0 0 0 / 14%) 0px 2px 2px;
+  transition: transform 100ms ease 0s;
+  will-change: transform;
+}
+
+.svgIcon {
+  color: rgba(192, 38, 211, 1);
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c-jrMzNf[data-state="checked"] {
+  transform: translateX(19px);
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}

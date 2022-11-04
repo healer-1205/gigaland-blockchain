@@ -1,128 +1,114 @@
-.header-nav-container {
-  padding: 15px 30px 0px 30px;
-  background-color: var(--background-color);
+input:focus-visible {
+  outline-offset: 0px;
 }
 
-.navbar-li {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  padding-left: 0;
-  margin-bottom: 0 !important;
-}
-
-.navbar-li-small {
-  list-style: none;
-  display: flex;
-  padding: 0px;
-  margin: 0px;
-  flex-direction: column;
-}
-
-.navbar-li li a {
-  text-decoration: none;
+.header_bar {
+  background-color: var(--navbar-bg-color);
+  width: 100%;
+  z-index: 50;
+  position: fixed;
   color: var(--navbar-text);
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.navbar-li-small li a {
-  text-decoration: none;
-  color: var(--navbar-text);
-  padding: 20px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.cool-link {
-  display: inline-block;
-  color: #000;
-  text-decoration: none;
-}
-
-.cool-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 3px;
-  border-radius: 100px;
-  background: #d24034;
-  transition: width 0.3s;
-}
-
-.active::after {
-  width: 100%;
-}
-
-.cool-link:hover::after {
-  width: 100%;
-}
-
-.btn-connect {
-  appearance: none;
-  color: white;
-  padding: 4px 16px 7px 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  border: none;
-  background: rgb(210, 64, 52);
-  overflow: hidden;
-  transition: all 0.3s ease 0s;
-  outline: none;
-}
-
-.small-nav {
-  margin: 0 auto !important;
-  width: fit-content;
-}
-
-.btn-connect:hover {
-  background: rgb(143, 43, 34);
-}
-
-.nav-offcanvas.offcanvas-start {
-  width: 100%;
-  text-align: center;
-  background-color: black;
-}
-
-.menu-icon {
-  padding: 0px;
-  font-size: 26px;
-  margin: 0px;
-  display: none;
-}
-
-.justify-content-around {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  &__switch-btn {
+  -webkit-font-smoothing: antialiased;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.searchBox {
+  background-color: var(--navbar-searchBox-bg-color);
+  border-radius: 0.75rem;
+  height: 3rem;
+  display: flex;
+  .searchBox_container {
+    padding-right: 1rem;
+    align-items: center;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 30px !important;
+    flex-direction: row;
+    -webkit-font-smoothing: antialiased;
+  }
+  .searchBox_input {
+    background-color: var(--navbar-searchBox-bg-color);
+    animation-name: onautofillcancel;
+    border-style: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    appearance: none;
+    border-color: #6b7280;
+    border-width: 1px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    outline: none;
+  }
+
+  .searchBox_input:focus {
+    color: var(--navbar-text);
+  }
+  .searchBox_button {
+    cursor: pointer;
+    border-style: none;
+    color: rgba(156, 163, 175, 1);
+    padding-left: 1rem;
+    background-color: transparent;
+    background-image: none;
+    text-transform: none;
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.responsive {
+  flex-grow: 1;
+}
+
+.menu_container {
+  display: flex;
+  position: unset !important;
+  overflow: unset !important;
+  white-space: nowrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+@media only screen and (max-width: 1536px) {
+  .searchBox {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .searchBox {
+    width: 400px;
+  }
+  .responsive {
+    display: block;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
+  .logo {
+    margin-left: 0px;
   }
 
-  .navbar-li {
+  .searchBox {
     display: none;
-  }
-
-  .header-nav-container {
-    padding: 10px 30px 10px 30px;
-  }
-
-  .justify-content-around__switch-btn {
-    padding-right: 0px !important;
   }
 }
