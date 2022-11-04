@@ -29,12 +29,6 @@ function Toggle() {
     changeThemeAndToggle()
   }
 
-  const handleKeypress = (e: any) => {
-    if (e.code === "Enter") {
-      changeThemeAndToggle()
-    }
-  }
-
   useEffect(() => {
     if (dark === "theme-dark") {
       setActive(false)
@@ -46,24 +40,6 @@ function Toggle() {
   }, [dark])
 
   return (
-    // <div className="container--toggle">
-    //   <input
-    //     aria-label="dark mode toggle"
-    //     role="switch"
-    //     aria-checked={ariaActive}
-    //     onKeyPress={handleKeypress}
-    //     type="checkbox"
-    //     id="toggle"
-    //     className="toggle--checkbox"
-    //     onClick={handleOnClick}
-    //     checked={active}
-    //     readOnly
-    //   />
-    //   <label htmlFor="toggle" className="toggle--label">
-    //     <span className="toggle--label-background"></span>
-    //     dark mode toggle
-    //   </label>
-    // </div>
     <div className="toggle_container">
       <button
         type="button"

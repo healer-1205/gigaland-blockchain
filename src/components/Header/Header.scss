@@ -91,24 +91,26 @@ a {
 }
 
 .connect_btn {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0 !important;
   margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--navbar-text);
+  background-color: var(--connect-button-bg-color);
+  border-color: var(--connect-button-border-color);
 }
 
 .btn_container {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(112, 26, 117, 1);
-  border-color: rgba(134, 25, 143, 1);
-}
-
-.btn_wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 2.5rem;
+  padding: 0px 30px;
   gap: 0.5rem !important;
   flex-direction: row;
   -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  white-space: nowrap;
 }
 
 @media only screen and (max-width: 1536px) {
