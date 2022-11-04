@@ -12,6 +12,7 @@ input:focus-visible {
   justify-content: space-between;
   align-items: center;
   -webkit-font-smoothing: antialiased;
+  height: 4rem;
 }
 
 .logo {
@@ -27,6 +28,7 @@ input:focus-visible {
   border-radius: 0.75rem;
   height: 3rem;
   display: flex;
+  border: 1px solid rgba(41, 37, 36, 1);
   .searchBox_container {
     padding-right: 1rem;
     align-items: center;
@@ -88,6 +90,27 @@ a {
   text-decoration: inherit;
 }
 
+.connect_btn {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0 !important;
+  margin-right: 0.5rem;
+}
+
+.btn_container {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(112, 26, 117, 1);
+  border-color: rgba(134, 25, 143, 1);
+}
+
+.btn_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem !important;
+  flex-direction: row;
+  -webkit-font-smoothing: antialiased;
+}
+
 @media only screen and (max-width: 1536px) {
   .searchBox {
     width: 600px;
@@ -109,6 +132,10 @@ a {
   }
 
   .searchBox {
+    display: none;
+  }
+
+  .connect_btn {
     display: none;
   }
 }

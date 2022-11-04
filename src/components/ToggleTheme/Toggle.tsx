@@ -69,12 +69,15 @@ function Toggle() {
         type="button"
         role="switch"
         aria-checked={ariaActive}
-        data-state={active}
+        data-state="checked"
         value="on"
         id="switch_scheme"
-        className="toggle_button dark_mode white_mode"
+        className={active ? "toggle_button c-fBOjjt" : "toggle_button c-fBOjjt-jqGijD-theme-dark"}
+        onClick={() => {
+          handleOnClick()
+        }}
       >
-        <span className="c-jrMzNf">
+        <span className={active ? "c-jrMzNf" : "c-jrMzNf-checked"}>
           <div style={{ padding: "0rem 0.25rem" }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

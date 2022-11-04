@@ -201,6 +201,14 @@
   border-radius: 9999px;
 }
 
+.c-fBOjjt[data-state="checked"] {
+  background-color: rgb(255, 223, 38);
+}
+
+.c-fBOjjt-jqGijD-theme-dark[data-state="checked"] {
+  background-color: rgb(112, 26, 117);
+}
+
 .c-jrMzNf {
   display: block;
   width: 21px;
@@ -218,8 +226,16 @@
   height: 0.75rem;
 }
 
-.c-jrMzNf[data-state="checked"] {
+.c-jrMzNf-checked {
   transform: translateX(19px);
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: rgb(0 0 0 / 14%) 0px 2px 2px;
+  transition: transform 100ms ease 0s;
+  will-change: transform;
 }
 
 button:focus:not(:focus-visible) {
