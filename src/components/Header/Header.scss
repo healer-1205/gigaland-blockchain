@@ -1,0 +1,128 @@
+.header-nav-container {
+  padding: 15px 30px 0px 30px;
+  background-color: var(--background-color);
+}
+
+.navbar-li {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0 !important;
+}
+
+.navbar-li-small {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  flex-direction: column;
+}
+
+.navbar-li li a {
+  text-decoration: none;
+  color: var(--navbar-text);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.navbar-li-small li a {
+  text-decoration: none;
+  color: var(--navbar-text);
+  padding: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  background: #d24034;
+  transition: width 0.3s;
+}
+
+.active::after {
+  width: 100%;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}
+
+.btn-connect {
+  appearance: none;
+  color: white;
+  padding: 4px 16px 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background: rgb(210, 64, 52);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+.small-nav {
+  margin: 0 auto !important;
+  width: fit-content;
+}
+
+.btn-connect:hover {
+  background: rgb(143, 43, 34);
+}
+
+.nav-offcanvas.offcanvas-start {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+.menu-icon {
+  padding: 0px;
+  font-size: 26px;
+  margin: 0px;
+  display: none;
+}
+
+.justify-content-around {
+  align-items: center;
+  &__switch-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-li {
+    display: none;
+  }
+
+  .header-nav-container {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .justify-content-around__switch-btn {
+    padding-right: 0px !important;
+  }
+}
