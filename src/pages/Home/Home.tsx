@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
     <div className="home">
       <div id="top"></div>
       <Collection />
-      <Container className="sellers">
+      <Container className="sellers pb-30">
         <Row>
           <Col>
             <div className="text-center pt-30">
@@ -29,7 +29,7 @@ export const Home: React.FC = () => {
                 <div className="author_list_pp">
                   <Link to="/">
                     <img className="lazy" src={Images.Author1} alt="Author1" />
-                    <FontAwesomeIcon icon={faCheck} />
+                    <FontAwesomeIcon icon={faCheck} className="checkIcon" />
                   </Link>
                 </div>
                 <div className="author_list_info">
@@ -41,7 +41,7 @@ export const Home: React.FC = () => {
                 <div className="author_list_pp">
                   <Link to="/">
                     <img className="lazy" src={Images.Author2} alt="Author2" />
-                    <FontAwesomeIcon icon={faCheck} />
+                    <FontAwesomeIcon icon={faCheck} className="checkIcon" />
                   </Link>
                 </div>
                 <div className="author_list_info">
@@ -53,7 +53,7 @@ export const Home: React.FC = () => {
                 <div className="author_list_pp">
                   <Link to="/">
                     <img className="lazy" src={Images.Author3} alt="Author3" />
-                    <FontAwesomeIcon icon={faCheck} />
+                    <FontAwesomeIcon icon={faCheck} className="checkIcon" />
                   </Link>
                 </div>
                 <div className="author_list_info">
@@ -65,7 +65,7 @@ export const Home: React.FC = () => {
                 <div className="author_list_pp">
                   <Link to="/">
                     <img className="lazy" src={Images.Author4} alt="Author4" />
-                    <FontAwesomeIcon icon={faCheck} />
+                    <FontAwesomeIcon icon={faCheck} className="checkIcon" />
                   </Link>
                 </div>
                 <div className="author_list_info">
@@ -77,6 +77,56 @@ export const Home: React.FC = () => {
           </Col>
           <Col sm={12} md={6} lg={6}>
             <h3>Recently Sold</h3>
+            <ol className="author_list">
+              <li>
+                <div className="author_list_pp">
+                  <Link to="/">
+                    <img className="lazy" src={Images.Author5} alt="Author5" />
+                    <FontAwesomeIcon icon={faCheck} className="checkIcon" />
+                  </Link>
+                </div>
+                <div className="author_list_info">
+                  <Link to="/">Jimmy Wright</Link>
+                  <span>1.9 ETH</span>
+                </div>
+              </li>
+              <li>
+                <div className="author_list_pp">
+                  <Link to="/">
+                    <img className="lazy" src={Images.Author6} alt="Author6" />
+                    <FontAwesomeIcon icon={faCheck} className="checkIcon" />
+                  </Link>
+                </div>
+                <div className="author_list_info">
+                  <Link to="/">Karla Sharp</Link>
+                  <span>1.6 ETH</span>
+                </div>
+              </li>
+              <li>
+                <div className="author_list_pp">
+                  <Link to="/">
+                    <img className="lazy" src={Images.Author7} alt="Author7" />
+                    <FontAwesomeIcon icon={faCheck} className="checkIcon" />
+                  </Link>
+                </div>
+                <div className="author_list_info">
+                  <Link to="/">Gayle Hicks</Link>
+                  <span>1.5 ETH</span>
+                </div>
+              </li>
+              <li>
+                <div className="author_list_pp">
+                  <Link to="/">
+                    <img className="lazy" src={Images.Author12} alt="Author12" />
+                    <FontAwesomeIcon icon={faCheck} className="checkIcon" />
+                  </Link>
+                </div>
+                <div className="author_list_info">
+                  <Link to="/">Fred Ryan</Link>
+                  <span>0.5 eth</span>
+                </div>
+              </li>
+            </ol>
           </Col>
         </Row>
       </Container>
