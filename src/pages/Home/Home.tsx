@@ -4,13 +4,13 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { Collection } from "../../components/Collection"
+import { ScrollToTop } from "../../components/ScrollToTop"
 import { Images } from "../../assets"
 import "./Home.scss"
 
 export const Home: React.FC = () => {
   return (
     <div className="home pt-60">
-      <div id="top"></div>
       <Collection />
       <Container className="sellers pb-30">
         <Row>
@@ -130,6 +130,7 @@ export const Home: React.FC = () => {
           </Col>
         </Row>
       </Container>
+      <ScrollToTop />
     </div>
   )
 }
