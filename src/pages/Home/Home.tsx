@@ -9,7 +9,7 @@ import "./Home.scss"
 
 export const Home: React.FC = () => {
   return (
-    <div className="home">
+    <div className="home pt-60">
       <div id="top"></div>
       <Collection />
       <Container className="sellers pb-30">
