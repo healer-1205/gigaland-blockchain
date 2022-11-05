@@ -5,18 +5,14 @@ import { Col, Container, Row } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { Images } from "../../assets"
-// import "swiper/css"
-// import "swiper/css/navigation"
-// import "swiper/css/effect-coverflow"
 import "swiper/swiper.min.css"
-import "swiper/modules/free-mode/free-mode.min.css"
-import "swiper/modules/navigation/navigation.scss"
-import "swiper/modules/thumbs/thumbs.min.css"
+import "swiper/modules/effect-coverflow/effect-coverflow.less"
+import "swiper/modules/navigation/navigation.min.css"
 import "./Collection.scss"
 
 export const Collection: React.FC = () => {
   return (
-    <div id="section">
+    <div id="section" className="pb-30">
       <Container>
         <Row>
           <Col>

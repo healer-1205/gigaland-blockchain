@@ -31,7 +31,7 @@
   height: 40px !important;
   border-radius: 50%;
   background-color: #242435;
-  display: flex !important;
+  display: flex;
   justify-content: center !important;
   align-items: center !important;
   /* position: absolute !important; */
@@ -49,7 +49,7 @@
   height: 40px !important;
   border-radius: 50%;
   background-color: #242435;
-  display: flex !important;
+  display: flex;
   justify-content: center !important;
   align-items: center !important;
   left: -45px !important;
@@ -131,4 +131,13 @@
   position: absolute;
   bottom: 4px;
   right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
 }
