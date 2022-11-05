@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from "react"
-import { ThemeContext } from "../../context/ThemeContext"
+import React from "react"
+import { Collection } from "../../components/Collection"
 import "./Home.scss"
 
 export const Home: React.FC = () => {
-  const { dark } = useContext(ThemeContext)
-  const [isDarkImage, setIsDarkImage] = useState(true)
-  useEffect(() => {
-    if (dark === "theme-dark") {
-      setIsDarkImage(true)
-    } else setIsDarkImage(false)
-  }, [dark])
-  return <div className="home"></div>
+  return (
+    <div className="home">
+      <div className="no-bottom no-top" id="content">
+        <div id="top"></div>
+        <Collection />
+      </div>
+    </div>
+  )
 }

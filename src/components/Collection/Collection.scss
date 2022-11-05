@@ -1,0 +1,134 @@
+.text-center {
+  span {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+  }
+}
+
+.small-border {
+  color: #1aa7ec;
+  background: linear-gradient(to right, #1aa7ec 0%, #797ef6 100%);
+  width: 50px;
+  height: 2px;
+  border-left: none;
+  border-right: none;
+  display: block;
+  margin: 10px auto;
+}
+
+.swiperConrainer {
+  position: relative;
+  padding-top: 30px;
+}
+
+.swiper {
+  position: unset !important;
+}
+
+.swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  background-color: #242435;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  /* position: absolute !important; */
+  right: -45px !important;
+  z-index: 5000;
+}
+.swiper-button-next:after {
+  font-size: 15px !important;
+  color: white;
+  font-weight: bold;
+}
+
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  background-color: #242435;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  left: -45px !important;
+  z-index: 5000;
+}
+.swiper-button-prev:after {
+  font-size: 15px !important;
+  font-weight: bold;
+  color: white;
+}
+
+.nft_coll {
+  background-color: var(--swiper-bg-color);
+  text-align: center;
+  padding-bottom: 10px;
+  border: 1px solid #0d1250;
+  -webkit-border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.nft_wrap {
+  position: relative;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+  -webkit-border-radius: 10px 10px 0 0;
+}
+
+.nft_coll * {
+  transition: 0.7s;
+  outline: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.nft_coll_pp {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nft_coll_pp img {
+  border: none;
+  width: 50px;
+  height: auto;
+  -webkit-border-radius: 100%;
+}
+
+.nft_coll:hover img {
+  transform: scale(1.05);
+}
+
+.nft_coll h4 {
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.nft_coll span {
+  font-size: 14px;
+  color: #999999;
+}
+
+.nft_coll_pp .fa-check {
+  font-size: 10px;
+  color: #ffffff;
+  background: linear-gradient(to right, #1aa7ec 0%, #797ef6 100%);
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  padding: 3px;
+  position: absolute;
+  bottom: 4px;
+  right: 5px;
+}

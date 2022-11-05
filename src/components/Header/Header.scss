@@ -7,8 +7,8 @@ input:focus-visible {
   border-bottom: 1px solid rgb(28, 25, 23);
   width: 100%;
   z-index: 50;
-  position: fixed;
-  color: var(--navbar-text);
+  position: sticky;
+  color: var(--text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@ input:focus-visible {
   margin-left: 10px;
 }
 
-.grow {
+._grow {
   flex-grow: 1;
 }
 
@@ -54,7 +54,7 @@ input:focus-visible {
   }
 
   .searchBox_input:focus {
-    color: var(--navbar-text);
+    color: var(--text-color);
   }
   .searchBox_button {
     cursor: pointer;
@@ -93,8 +93,8 @@ input:focus-visible {
 }
 
 a {
-  color: inherit;
-  text-decoration: inherit;
+  color: inherit !important;
+  text-decoration: inherit !important;
 }
 
 .menu_container {
@@ -105,7 +105,7 @@ a {
 .connect_btn {
   margin-right: 0.5rem;
   border-radius: 0.5rem;
-  color: var(--navbar-text);
+  color: var(--text-color);
   background-color: var(--connect-button-bg-color);
   border-color: var(--connect-button-border-color);
 }
@@ -139,7 +139,7 @@ a {
   width: 100%;
   height: 3px;
   display: block;
-  background-color: var(--navbar-text);
+  background-color: var(--text-color);
 }
 
 .headermenu {

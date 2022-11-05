@@ -4,6 +4,7 @@ import { ThemeContext, ThemeProvider } from "./context/ThemeContext"
 import { Home } from "./pages/Home"
 import { Header } from "./components/Header/Header"
 import "./App.scss"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   const { dark } = useContext(ThemeContext)

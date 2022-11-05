@@ -1,19 +1,10 @@
-import React, { useContext, useEffect, useState } from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import Toggle from "../ToggleTheme/Toggle"
-import { ThemeContext } from "../../context/ThemeContext"
 import { Images } from "../../assets"
 import "./Header.scss"
 
 export const Header: React.FC = () => {
-  const { dark } = useContext(ThemeContext)
-  const [isDarkImage, setIsDarkImage] = useState(true)
-  useEffect(() => {
-    if (dark === "theme-dark") {
-      setIsDarkImage(true)
-    } else setIsDarkImage(false)
-  }, [dark])
-
   const [isOpen, setIsOpen] = useState(false)
   const open = () => {
     if (isOpen) {
@@ -30,7 +21,7 @@ export const Header: React.FC = () => {
           <img src={Images.Logo5} alt="Logo" />
         </Link>
       </div>
-      <div className="grow"></div>
+      <div className="_grow"></div>
       <div className="searchBox">
         <div className="searchBox_container">
           <input className="searchBox_input" type="text" placeholder="Search for collections..." />
@@ -126,7 +117,7 @@ export const Header: React.FC = () => {
       </div>
       <div className="connect_btn">
         <div className="btn_container">
-          <div style={{ width: "1rem", paddingTop: "7px" }}>
+          <div style={{ width: "1rem" }}>
             <svg data-name="Icon Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="white">
               <path d="M46.47,20.07H41.16a2.15,2.15,0,0,1-1.61-.72l-2.16-2.42a1.69,1.69,0,0,0-2.53,0L33,19a3.21,3.21,0,0,1-2.39,1.07h-29A30.26,30.26,0,0,0,0,27.48H27.42a1.78,1.78,0,0,0,1.28-.54l2.56-2.66a1.67,1.67,0,0,1,1.22-.52h.1a1.7,1.7,0,0,1,1.27.57L36,26.75a2.17,2.17,0,0,0,1.61.73H60a30.26,30.26,0,0,0-1.58-7.41h-12Z"></path>
               <path d="M16.6,43.05a1.78,1.78,0,0,0,1.27-.54l2.56-2.66a1.7,1.7,0,0,1,1.22-.52h.1A1.7,1.7,0,0,1,23,39.9l2.15,2.42a2.14,2.14,0,0,0,1.62.73H57.12a29.73,29.73,0,0,0,2.47-7.48H30.47a2.17,2.17,0,0,1-1.62-.72L26.7,32.42a1.69,1.69,0,0,0-2.53,0L22.32,34.5a3.18,3.18,0,0,1-2.38,1.07H.41a29.73,29.73,0,0,0,2.47,7.48Z"></path>
