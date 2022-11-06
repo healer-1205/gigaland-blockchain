@@ -5,6 +5,7 @@ import { Header } from "./components/Header/Header"
 import { Footer } from "./components/Footer"
 import { Home } from "./pages/Home"
 import { Explore } from "./pages/Explore"
+import { Collection } from "./pages/Collection"
 import "./App.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
+          <Route path="/collection" element={<Collection />} />
         </Routes>
         <Footer />
       </ThemeProvider>

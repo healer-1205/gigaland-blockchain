@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
-import { Collection } from "../../components/Collection"
+import { CollectionSection } from "../../components/CollectionSection"
 import { ScrollToTop } from "../../components/ScrollToTop"
 import { Images } from "../../assets"
 import "./Home.scss"
@@ -11,7 +11,7 @@ import "./Home.scss"
 export const Home: React.FC = () => {
   return (
     <div className="home pt-60">
-      <Collection />
+      <CollectionSection />
       <Container className="sellers pb-30">
         <Row>
           <Col>

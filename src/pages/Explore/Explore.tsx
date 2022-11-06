@@ -44,6 +44,27 @@ export const Explore: React.FC = () => {
           <Col sm={12} md={3} lg={3}>
             <ProfileCard />
           </Col>
+          <Col sm={12} md={3} lg={3}>
+            <ProfileCard />
+          </Col>
+          <Col sm={12} md={3} lg={3}>
+            <ProfileCard />
+          </Col>
+          <Col sm={12} md={3} lg={3}>
+            <ProfileCard />
+          </Col>
+          <Col sm={12} md={3} lg={3}>
+            <ProfileCard />
+          </Col>
+          <Col sm={12} md={3} lg={3}>
+            <ProfileCard />
+          </Col>
+          <Col sm={12} md={3} lg={3}>
+            <ProfileCard />
+          </Col>
+          <Col sm={12} md={3} lg={3}>
+            <ProfileCard />
+          </Col>
         </Row>
       </Container>
       <ScrollToTop />

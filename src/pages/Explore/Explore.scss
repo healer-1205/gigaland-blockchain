@@ -30,7 +30,6 @@
     .active span {
       border-bottom: 3px solid #1aa7ec;
       color: #1aa7ec;
-      border-radius: 15px;
     }
 
     li {
@@ -43,6 +42,7 @@
       background: transparent;
       -webkit-border-radius: 5px;
       span {
+        border-radius: 15px;
         background-color: #1a1a25;
         padding: 8px 15px;
         transition: 0.7s;

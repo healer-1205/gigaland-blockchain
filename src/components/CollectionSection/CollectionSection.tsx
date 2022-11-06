@@ -8,9 +8,9 @@ import { Images } from "../../assets"
 import "swiper/swiper.min.css"
 import "swiper/modules/effect-coverflow/effect-coverflow.less"
 import "swiper/modules/navigation/navigation.min.css"
-import "./Collection.scss"
+import "./CollectionSection.scss"
 
-export const Collection: React.FC = () => {
+export const CollectionSection: React.FC = () => {
   return (
     <div id="section" className="pb-30">
       <Container>
