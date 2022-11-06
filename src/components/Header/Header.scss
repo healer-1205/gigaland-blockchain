@@ -103,11 +103,15 @@ a {
 }
 
 .connect_btn {
+  cursor: pointer;
   margin-right: 0.5rem;
   border-radius: 0.5rem;
   color: var(--text-color);
   background-color: var(--connect-button-bg-color);
   border-color: var(--connect-button-border-color);
+  &:hover {
+    background-color: rgba(134, 25, 143, 1);
+  }
 }
 
 .btn_container {

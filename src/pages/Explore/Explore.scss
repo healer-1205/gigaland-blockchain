@@ -1,0 +1,80 @@
+.explore {
+  background-color: var(--collection-bg-color);
+  color: var(--text-color);
+
+  .wallet_address {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .copy_btn {
+    color: var(--text-color);
+    background-color: var(--copy-btn-bg-color);
+    border: none;
+    margin: 0px 5px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1rem;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  .de_nav {
+    overflow: hidden;
+    font-weight: bold;
+    border-bottom: 2px solid #999999;
+    list-style: none;
+    .active span {
+      border-bottom: 3px solid #1aa7ec;
+      color: #1aa7ec;
+      border-radius: 15px;
+    }
+
+    li {
+      min-width: 80px;
+      text-align: center;
+      float: none;
+      display: inline-block;
+      margin-right: 5px;
+      list-style: none;
+      background: transparent;
+      -webkit-border-radius: 5px;
+      span {
+        background-color: #1a1a25;
+        padding: 8px 15px;
+        transition: 0.7s;
+        outline: none;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        cursor: pointer;
+        color: #999999;
+      }
+    }
+  }
+}
+
+.profile_image {
+  position: relative;
+  img {
+    -webkit-border-radius: 100%;
+    display: inline-block;
+    margin-top: -100px;
+    margin-bottom: 30px;
+  }
+  .fa-check {
+    font-size: 10px;
+    color: #ffffff;
+    background: linear-gradient(to right, #1aa7ec 0%, #797ef6 100%);
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    position: absolute;
+    margin: 10px 0px 0px -40px;
+    float: none;
+    display: inline-block;
+    padding: 10px;
+  }
+}

@@ -4,6 +4,7 @@ import { ThemeContext, ThemeProvider } from "./context/ThemeContext"
 import { Header } from "./components/Header/Header"
 import { Footer } from "./components/Footer"
 import { Home } from "./pages/Home"
+import { Explore } from "./pages/Explore"
 import "./App.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -20,6 +21,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
         </Routes>
         <Footer />
       </ThemeProvider>
