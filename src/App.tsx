@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer"
 import { Home } from "./pages/Home"
 import { Explore } from "./pages/Explore"
 import { Collection } from "./pages/Collection"
+import { Profile } from "./pages/Profile"
 import "./App.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/collection" element={<Collection />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
         <Footer />
       </ThemeProvider>
