@@ -1,0 +1,51 @@
+.nftcard {
+  border: 1px solid rgba(68, 64, 60, 1);
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  padding: 0 !important;
+
+  &:hover {
+    background-color: rgba(68, 64, 60, 1);
+    transition: 0.7s;
+  }
+
+  .nft_image {
+    border: 1px solid rgba(68, 64, 60, 1);
+    object-fit: cover;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    width: 100%;
+  }
+
+  .text_container {
+    text-align: left;
+
+    .title_text {
+      font-weight: 600;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .buy_text {
+      color: rgba(120, 113, 108, 1);
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .text__2 {
+      font-weight: 600;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+
+      .text__3 {
+        width: 1rem;
+      }
+    }
+  }
+
+  .grow {
+    flex-grow: 1;
+  }
+}

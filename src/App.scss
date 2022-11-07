@@ -37,6 +37,10 @@
   }
 }
 
+.pt-10 {
+  padding-top: 10px;
+}
+
 .pt-30 {
   padding-top: 30px;
 }
@@ -59,4 +63,27 @@
 
 .text-center {
   text-align: center;
+}
+
+.grey-color {
+  color: #999999;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+@media (max-width: 573px) {
+  .itestextsx {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }

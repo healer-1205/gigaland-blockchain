@@ -13,6 +13,12 @@ import Coll3 from "./collections/coll-3.jpg"
 import Coll4 from "./collections/coll-4.jpg"
 import Coll5 from "./collections/coll-5.jpg"
 import Coll6 from "./collections/coll-6.jpg"
+import NFT1 from "./nfts/1.png"
+import NFT2 from "./nfts/2.png"
+import NFT3 from "./nfts/3.png"
+import NFT4 from "./nfts/4.png"
+import NFT5 from "./nfts/5.png"
+import NFT6 from "./nfts/6.png"
 
 const Images = {
   Logo5,
@@ -30,6 +36,12 @@ const Images = {
   Coll4,
   Coll5,
   Coll6,
+  NFT1,
+  NFT2,
+  NFT3,
+  NFT4,
+  NFT5,
+  NFT6,
 }
 
 export default Images
