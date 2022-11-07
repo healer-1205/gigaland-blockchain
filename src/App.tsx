@@ -7,16 +7,15 @@ import { Home } from "./pages/Home"
 import { Explore } from "./pages/Explore"
 import { Collection } from "./pages/Collection"
 import { Profile } from "./pages/Profile"
+import { keepTheme } from "./components/themes"
 import "./App.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   const { dark } = useContext(ThemeContext)
   useEffect(() => {
-    if (dark === "theme-dark") {
-      document.documentElement.className = "theme-dark"
-    } else document.documentElement.className = "theme-light"
-  }, [dark])
+    keepTheme()
+  })
   return (
     <>
       <ThemeProvider>

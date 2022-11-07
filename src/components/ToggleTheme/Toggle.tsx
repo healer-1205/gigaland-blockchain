@@ -1,5 +1,6 @@
 import { useEffect, useState, useContext } from "react"
 import { ThemeContext } from "../../context/ThemeContext"
+import { setTheme } from "../themes"
 import "./toggle.scss"
 
 function Toggle() {
@@ -10,18 +11,14 @@ function Toggle() {
   const [ariaActive, setAriaActive] = useState(true)
 
   const changeThemeAndToggle = () => {
-    if (toggleDark) {
-      if (dark === "theme-dark") {
-        toggleDark("theme-light")
-        document.documentElement.className = "theme-light"
-        setActive(true)
-        setAriaActive(false)
-      } else {
-        toggleDark("theme-dark")
-        document.documentElement.className = "theme-dark"
-        setActive(false)
-        setAriaActive(true)
-      }
+    if (localStorage.getItem("theme") === "theme-dark") {
+      setTheme("theme-light")
+      setActive(true)
+      setAriaActive(false)
+    } else {
+      setTheme("theme-dark")
+      setActive(false)
+      setAriaActive(true)
     }
   }
 
